@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_components_date_picker_configurables",
+  "info": {
+    "displayName": "DatePicker Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "selectedDate": {
+      "type": "enumeration",
+      "enum": [
+        "date"
+      ]
+    }
+  }
+}

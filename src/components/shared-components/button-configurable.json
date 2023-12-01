@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_components_button_configurables",
+  "info": {
+    "displayName": "Button-Configurable",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    }
+  }
+}

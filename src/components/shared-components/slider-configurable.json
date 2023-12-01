@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_components_slider_configurables",
+  "info": {
+    "displayName": "Slider Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

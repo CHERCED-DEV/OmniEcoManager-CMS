@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_components_toggle_switch_configurables",
+  "info": {
+    "displayName": "Toggle Switch Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "onText": {
+      "type": "string"
+    },
+    "offText": {
+      "type": "string"
+    }
+  }
+}

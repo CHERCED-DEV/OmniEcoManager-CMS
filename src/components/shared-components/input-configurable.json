@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_components_input_configurables",
+  "info": {
+    "displayName": "Input Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_components_tooltip_configurables",
+  "info": {
+    "displayName": "Tooltip Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_components_tag_configurables",
+  "info": {
+    "displayName": "Tag Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    }
+  }
+}

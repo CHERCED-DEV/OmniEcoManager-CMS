@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_components_accordion_item_configurables",
+  "info": {
+    "displayName": "Accordion Item Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "expanded": {
+      "type": "boolean"
+    }
+  }
+}

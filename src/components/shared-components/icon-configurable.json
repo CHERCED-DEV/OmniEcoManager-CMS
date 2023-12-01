@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_components_icon_configurables",
+  "info": {
+    "displayName": "Icon Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    }
+  }
+}

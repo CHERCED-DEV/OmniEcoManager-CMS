@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_components_check_box_configurables",
+  "info": {
+    "displayName": "CheckBox Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "checked": {
+      "type": "boolean"
+    }
+  }
+}

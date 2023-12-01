@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_components_selected_box_configurables",
+  "info": {
+    "displayName": "SelectedBox Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "options": {
+      "type": "enumeration",
+      "enum": [
+        "option"
+      ]
+    }
+  }
+}

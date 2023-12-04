@@ -2,7 +2,8 @@
   "collectionName": "components_shared_components_input_configurables",
   "info": {
     "displayName": "Input Configurable",
-    "icon": "layer"
+    "icon": "layer",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,18 @@
     },
     "placeholder": {
       "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "password",
+        "email",
+        "number",
+        "date",
+        "checkbox",
+        "radio"
+      ]
     }
   }
 }

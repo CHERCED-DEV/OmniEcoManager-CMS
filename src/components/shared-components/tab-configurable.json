@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_components_tab_configurables",
+  "info": {
+    "displayName": "Tab Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "selected": {
+      "type": "boolean"
+    },
+    "aria_selected": {
+      "type": "boolean"
+    }
+  }
+}

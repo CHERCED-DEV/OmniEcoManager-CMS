@@ -23,6 +23,7 @@ export interface SharedComponentsButtonConfigurable extends Schema.Component {
   };
   attributes: {
     label: Attribute.String;
+    type: Attribute.Enumeration<['button', 'submit', 'reset']>;
   };
 }
 
@@ -67,10 +68,41 @@ export interface SharedComponentsInputConfigurable extends Schema.Component {
   info: {
     displayName: 'Input Configurable';
     icon: 'layer';
+    description: '';
   };
   attributes: {
     label: Attribute.String;
     placeholder: Attribute.String;
+    type: Attribute.Enumeration<
+      ['text', 'password', 'email', 'number', 'date', 'checkbox', 'radio']
+    >;
+  };
+}
+
+export interface SharedComponentsLinkConfigurable extends Schema.Component {
+  collectionName: 'components_shared_components_link_configurables';
+  info: {
+    displayName: 'Link Configurable';
+    icon: 'layer';
+  };
+  attributes: {
+    href: Attribute.String;
+    label: Attribute.String;
+  };
+}
+
+export interface SharedComponentsModalDialog extends Schema.Component {
+  collectionName: 'components_shared_components_modal_dialogs';
+  info: {
+    displayName: 'ModalDialog Configurable';
+    icon: 'layer';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    content: Attribute.Text;
+    is_open: Attribute.Boolean;
+    aria_modal: Attribute.String;
   };
 }
 
@@ -80,10 +112,11 @@ export interface SharedComponentsSelectedBoxConfigurable
   info: {
     displayName: 'SelectedBox Configurable';
     icon: 'layer';
+    description: '';
   };
   attributes: {
     label: Attribute.String;
-    options: Attribute.Enumeration<['option']>;
+    options: Attribute.JSON & Attribute.Required;
   };
 }
 
@@ -96,6 +129,20 @@ export interface SharedComponentsSliderConfigurable extends Schema.Component {
   attributes: {
     label: Attribute.String;
     value: Attribute.String;
+  };
+}
+
+export interface SharedComponentsTabConfigurable extends Schema.Component {
+  collectionName: 'components_shared_components_tab_configurables';
+  info: {
+    displayName: 'Tab Configurable';
+    icon: 'layer';
+  };
+  attributes: {
+    label: Attribute.String;
+    content: Attribute.Text;
+    selected: Attribute.Boolean;
+    aria_selected: Attribute.Boolean;
   };
 }
 
@@ -138,6 +185,20 @@ export interface SharedComponentsTooltipConfigurable extends Schema.Component {
   };
 }
 
+export interface SharedComponentsVideoPlayerConfigurable
+  extends Schema.Component {
+  collectionName: 'components_shared_components_video_player_configurables';
+  info: {
+    displayName: 'VideoPlayer Configurable';
+    icon: 'layer';
+  };
+  attributes: {
+    src: Attribute.String;
+    controls: Attribute.Boolean;
+    aria_label: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -147,11 +208,15 @@ declare module '@strapi/types' {
       'shared-components.date-picker-configurable': SharedComponentsDatePickerConfigurable;
       'shared-components.icon-configurable': SharedComponentsIconConfigurable;
       'shared-components.input-configurable': SharedComponentsInputConfigurable;
+      'shared-components.link-configurable': SharedComponentsLinkConfigurable;
+      'shared-components.modal-dialog': SharedComponentsModalDialog;
       'shared-components.selected-box-configurable': SharedComponentsSelectedBoxConfigurable;
       'shared-components.slider-configurable': SharedComponentsSliderConfigurable;
+      'shared-components.tab-configurable': SharedComponentsTabConfigurable;
       'shared-components.tag-configurable': SharedComponentsTagConfigurable;
       'shared-components.toggle-switch-configurable': SharedComponentsToggleSwitchConfigurable;
       'shared-components.tooltip-configurable': SharedComponentsTooltipConfigurable;
+      'shared-components.video-player-configurable': SharedComponentsVideoPlayerConfigurable;
     }
   }
 }

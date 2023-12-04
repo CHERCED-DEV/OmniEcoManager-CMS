@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_components_link_configurables",
+  "info": {
+    "displayName": "Link Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "href": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

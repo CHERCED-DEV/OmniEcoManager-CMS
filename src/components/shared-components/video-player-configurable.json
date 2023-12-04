@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_components_video_player_configurables",
+  "info": {
+    "displayName": "VideoPlayer Configurable",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "src": {
+      "type": "string"
+    },
+    "controls": {
+      "type": "boolean"
+    },
+    "aria_label": {
+      "type": "string"
+    }
+  }
+}

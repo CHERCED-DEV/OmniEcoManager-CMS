@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_components_modal_dialogs",
+  "info": {
+    "displayName": "ModalDialog Configurable",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "is_open": {
+      "type": "boolean"
+    },
+    "aria_modal": {
+      "type": "string"
+    }
+  }
+}

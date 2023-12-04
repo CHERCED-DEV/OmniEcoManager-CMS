@@ -9,6 +9,14 @@
   "attributes": {
     "label": {
       "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "button",
+        "submit",
+        "reset"
+      ]
     }
   }
 }

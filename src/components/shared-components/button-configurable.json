@@ -17,6 +17,17 @@
         "submit",
         "reset"
       ]
+    },
+    "button_id": {
+      "type": "string"
+    },
+    "button_class": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secundary",
+        "page"
+      ]
     }
   }
 }

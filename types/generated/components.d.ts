@@ -6,11 +6,13 @@ export interface SharedComponentsAccordionItemConfigurable
   info: {
     displayName: 'Accordion Item Configurable';
     icon: 'layer';
+    description: '';
   };
   attributes: {
     heading: Attribute.String;
     content: Attribute.Text;
     expanded: Attribute.Boolean;
+    accordion_id: Attribute.String;
   };
 }
 
@@ -24,6 +26,8 @@ export interface SharedComponentsButtonConfigurable extends Schema.Component {
   attributes: {
     label: Attribute.String;
     type: Attribute.Enumeration<['button', 'submit', 'reset']>;
+    button_id: Attribute.String;
+    button_class: Attribute.Enumeration<['primary', 'secundary', 'page']>;
   };
 }
 

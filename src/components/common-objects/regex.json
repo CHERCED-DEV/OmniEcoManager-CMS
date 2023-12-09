@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_common_objects_regexes",
+  "info": {
+    "displayName": "Regexs",
+    "icon": "shield",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "INPUT_EMAIL": {
+      "type": "string"
+    },
+    "INPUT_PASSWORD": {
+      "type": "string"
+    },
+    "INPUT_PHONE": {
+      "type": "string"
+    },
+    "INPUT_FULLNAME": {
+      "type": "string"
+    },
+    "INPUT_POSTCODE": {
+      "type": "string"
+    },
+    "INPUT_URL": {
+      "type": "string"
+    }
+  }
+}

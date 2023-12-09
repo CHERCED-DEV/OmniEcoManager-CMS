@@ -24,6 +24,26 @@
       },
       "type": "json",
       "required": true
+    },
+    "regex": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "common-objects.regex"
+    },
+    "error_messages": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "common-objects.error-mensajes"
     }
   }
 }

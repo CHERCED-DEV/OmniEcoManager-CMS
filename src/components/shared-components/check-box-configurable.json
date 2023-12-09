@@ -2,7 +2,8 @@
   "collectionName": "components_shared_components_check_box_configurables",
   "info": {
     "displayName": "CheckBox Configurable",
-    "icon": "layer"
+    "icon": "layer",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,19 @@
     },
     "checked": {
       "type": "boolean"
+    },
+    "checkbox_id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "radio",
+        "checkbox"
+      ]
+    },
+    "name": {
+      "type": "string"
     }
   }
 }

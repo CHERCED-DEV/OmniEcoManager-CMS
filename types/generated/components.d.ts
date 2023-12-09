@@ -1,5 +1,39 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface CommonObjectsErrorMensajes extends Schema.Component {
+  collectionName: 'components_common_objects_error_mensajes';
+  info: {
+    displayName: 'Error Menssages';
+    icon: 'shield';
+    description: '';
+  };
+  attributes: {
+    INPUT_EMAIL: Attribute.String;
+    INPUT_PASSWORD: Attribute.String;
+    INPUT_PHONE: Attribute.String;
+    INPUT_FULLNAME: Attribute.String;
+    INPUT_POSTCODE: Attribute.String;
+    INPUT_URL: Attribute.String;
+  };
+}
+
+export interface CommonObjectsRegex extends Schema.Component {
+  collectionName: 'components_common_objects_regexes';
+  info: {
+    displayName: 'Regexs';
+    icon: 'shield';
+    description: '';
+  };
+  attributes: {
+    INPUT_EMAIL: Attribute.String;
+    INPUT_PASSWORD: Attribute.String;
+    INPUT_PHONE: Attribute.String;
+    INPUT_FULLNAME: Attribute.String;
+    INPUT_POSTCODE: Attribute.String;
+    INPUT_URL: Attribute.String;
+  };
+}
+
 export interface SharedComponentsAccordionItemConfigurable
   extends Schema.Component {
   collectionName: 'components_shared_components_accordion_item_configurables';
@@ -36,10 +70,14 @@ export interface SharedComponentsCheckBoxConfigurable extends Schema.Component {
   info: {
     displayName: 'CheckBox Configurable';
     icon: 'layer';
+    description: '';
   };
   attributes: {
     label: Attribute.String;
     checked: Attribute.Boolean;
+    checkbox_id: Attribute.String;
+    type: Attribute.Enumeration<['radio', 'checkbox']>;
+    name: Attribute.String;
   };
 }
 
@@ -206,6 +244,8 @@ export interface SharedComponentsVideoPlayerConfigurable
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'common-objects.error-mensajes': CommonObjectsErrorMensajes;
+      'common-objects.regex': CommonObjectsRegex;
       'shared-components.accordion-item-configurable': SharedComponentsAccordionItemConfigurable;
       'shared-components.button-configurable': SharedComponentsButtonConfigurable;
       'shared-components.check-box-configurable': SharedComponentsCheckBoxConfigurable;

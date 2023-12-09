@@ -386,6 +386,18 @@ export interface ApiCommonCommon extends Schema.SingleType {
           localized: true;
         };
       }>;
+    regex: Attribute.Component<'common-objects.regex'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    error_messages: Attribute.Component<'common-objects.error-mensajes'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

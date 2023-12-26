@@ -12,15 +12,25 @@
       "repeatable": false,
       "component": "shared-components.link-configurable"
     },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "Facebook",
+        "Twitter",
+        "Instagram",
+        "LinkedIn",
+        "YouTube",
+        "Pinterest",
+        "Snapchat",
+        "TikTok",
+        "WhatsApp",
+        "Telegram",
+        "Tumblr",
+        "Reddit",
+        "GitHub",
+        "Medium",
+        "Spotify"
+      ]
     }
   }
 }

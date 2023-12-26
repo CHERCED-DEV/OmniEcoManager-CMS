@@ -34,17 +34,6 @@ export interface CommonConfigurationsRegex extends Schema.Component {
   };
 }
 
-export interface CommonConfigurationsSocialMediaImage extends Schema.Component {
-  collectionName: 'components_common_configurations_social_media_images';
-  info: {
-    displayName: 'SocialMedia image';
-    icon: 'twitter';
-  };
-  attributes: {
-    image: Attribute.Media;
-  };
-}
-
 export interface CommonElementsAlertConfigurable extends Schema.Component {
   collectionName: 'components_common_elements_alert_configurable_s';
   info: {
@@ -108,7 +97,25 @@ export interface CommonElementsSocialMediaConfigurable
   };
   attributes: {
     link: Attribute.Component<'shared-components.link-configurable'>;
-    image: Attribute.Media;
+    icon: Attribute.Enumeration<
+      [
+        'Facebook',
+        'Twitter',
+        'Instagram',
+        'LinkedIn',
+        'YouTube',
+        'Pinterest',
+        'Snapchat',
+        'TikTok',
+        'WhatsApp',
+        'Telegram',
+        'Tumblr',
+        'Reddit',
+        'GitHub',
+        'Medium',
+        'Spotify'
+      ]
+    >;
   };
 }
 
@@ -138,7 +145,6 @@ export interface SharedComponentsButtonConfigurable extends Schema.Component {
   attributes: {
     label: Attribute.String;
     type: Attribute.Enumeration<['button', 'submit', 'reset']>;
-    button_id: Attribute.String;
     button_class: Attribute.Enumeration<['primary', 'secundary', 'page']>;
   };
 }
@@ -324,7 +330,6 @@ declare module '@strapi/types' {
     export interface Components {
       'common-configurations.error-mensajes': CommonConfigurationsErrorMensajes;
       'common-configurations.regex': CommonConfigurationsRegex;
-      'common-configurations.social-media-image': CommonConfigurationsSocialMediaImage;
       'common-elements.alert-configurable': CommonElementsAlertConfigurable;
       'common-elements.copy-right-configurable': CommonElementsCopyRightConfigurable;
       'common-elements.news-letter-configurable': CommonElementsNewsLetterConfigurable;

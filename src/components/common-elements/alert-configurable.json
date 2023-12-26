@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_common_elements_alert_configurable_s",
+  "info": {
+    "displayName": "Alert Configurable ",
+    "icon": "shield",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-components.link-configurable"
+    },
+    "main_text": {
+      "type": "string"
+    }
+  }
+}

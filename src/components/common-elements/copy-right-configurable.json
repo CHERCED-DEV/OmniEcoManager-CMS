@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_common_elements_copy_right_configurables",
+  "info": {
+    "displayName": "CopyRight Configurable",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "rights": {
+      "type": "string"
+    },
+    "coorp_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

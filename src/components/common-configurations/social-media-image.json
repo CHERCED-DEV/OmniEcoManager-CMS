@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_common_configurations_social_media_images",
+  "info": {
+    "displayName": "SocialMedia image",
+    "icon": "twitter"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

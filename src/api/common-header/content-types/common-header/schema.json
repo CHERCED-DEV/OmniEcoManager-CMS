@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "commons",
+  "collectionName": "common_headers",
   "info": {
-    "singularName": "common",
-    "pluralName": "commons",
-    "displayName": "Common staticData",
-    "description": ""
+    "singularName": "common-header",
+    "pluralName": "common-headers",
+    "displayName": "Common Header Configuration"
   },
   "options": {
     "draftAndPublish": true
@@ -16,16 +15,32 @@
     }
   },
   "attributes": {
-    "layout": {
+    "brand_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "alerts": {
+      "type": "component",
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "json",
-      "required": true
+      "component": "common-elements.alert-configurable"
     },
-    "regex": {
+    "search_nav": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -33,17 +48,7 @@
           "localized": true
         }
       },
-      "component": "common-objects.regex"
-    },
-    "error_messages": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "common-objects.error-mensajes"
+      "component": "common-elements.search-nav-configurable"
     }
   }
 }

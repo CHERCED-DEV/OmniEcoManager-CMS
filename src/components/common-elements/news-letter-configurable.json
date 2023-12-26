@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_common_elements_news_letter_configurables",
+  "info": {
+    "displayName": "NewsLetter Configurable",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "input": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-components.input-configurable"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-components.button-configurable"
+    }
+  }
+}

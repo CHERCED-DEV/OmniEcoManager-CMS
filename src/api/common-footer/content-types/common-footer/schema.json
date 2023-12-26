@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "common_footers",
+  "info": {
+    "singularName": "common-footer",
+    "pluralName": "common-footers",
+    "displayName": "Common Footer Configuration",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "brand_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "newsletter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common-elements.news-letter-configurable",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "socialmedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common-elements.social-media-configurable",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "copyrigth": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common-elements.copy-right-configurable",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

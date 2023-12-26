@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_common_elements_social_media_configurables",
+  "info": {
+    "displayName": "SocialMedia Configurable",
+    "icon": "twitter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-components.link-configurable"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

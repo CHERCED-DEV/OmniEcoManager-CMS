@@ -1,6 +1,6 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface CommonObjectsErrorMensajes extends Schema.Component {
+export interface CommonConfigurationsErrorMensajes extends Schema.Component {
   collectionName: 'components_common_objects_error_mensajes';
   info: {
     displayName: 'Error Menssages';
@@ -17,7 +17,7 @@ export interface CommonObjectsErrorMensajes extends Schema.Component {
   };
 }
 
-export interface CommonObjectsRegex extends Schema.Component {
+export interface CommonConfigurationsRegex extends Schema.Component {
   collectionName: 'components_common_objects_regexes';
   info: {
     displayName: 'Regexs';
@@ -31,6 +31,84 @@ export interface CommonObjectsRegex extends Schema.Component {
     INPUT_FULLNAME: Attribute.String;
     INPUT_POSTCODE: Attribute.String;
     INPUT_URL: Attribute.String;
+  };
+}
+
+export interface CommonConfigurationsSocialMediaImage extends Schema.Component {
+  collectionName: 'components_common_configurations_social_media_images';
+  info: {
+    displayName: 'SocialMedia image';
+    icon: 'twitter';
+  };
+  attributes: {
+    image: Attribute.Media;
+  };
+}
+
+export interface CommonElementsAlertConfigurable extends Schema.Component {
+  collectionName: 'components_common_elements_alert_configurable_s';
+  info: {
+    displayName: 'Alert Configurable ';
+    icon: 'shield';
+    description: '';
+  };
+  attributes: {
+    link: Attribute.Component<'shared-components.link-configurable'>;
+    main_text: Attribute.String;
+  };
+}
+
+export interface CommonElementsCopyRightConfigurable extends Schema.Component {
+  collectionName: 'components_common_elements_copy_right_configurables';
+  info: {
+    displayName: 'CopyRight Configurable';
+    icon: 'alien';
+    description: '';
+  };
+  attributes: {
+    year: Attribute.String;
+    company_name: Attribute.String;
+    rights: Attribute.String;
+    coorp_logo: Attribute.Media;
+  };
+}
+
+export interface CommonElementsNewsLetterConfigurable extends Schema.Component {
+  collectionName: 'components_common_elements_news_letter_configurables';
+  info: {
+    displayName: 'NewsLetter Configurable';
+    icon: 'crown';
+  };
+  attributes: {
+    title: Attribute.String;
+    input: Attribute.Component<'shared-components.input-configurable'>;
+    button: Attribute.Component<'shared-components.button-configurable'>;
+  };
+}
+
+export interface CommonElementsSearchNavConfigurable extends Schema.Component {
+  collectionName: 'components_common_elements_search_nav_configurable_s';
+  info: {
+    displayName: 'SearchNav Configurable ';
+    icon: 'search';
+  };
+  attributes: {
+    input: Attribute.Component<'shared-components.input-configurable'>;
+    button: Attribute.Component<'shared-components.button-configurable'>;
+  };
+}
+
+export interface CommonElementsSocialMediaConfigurable
+  extends Schema.Component {
+  collectionName: 'components_common_elements_social_media_configurables';
+  info: {
+    displayName: 'SocialMedia Configurable';
+    icon: 'twitter';
+    description: '';
+  };
+  attributes: {
+    link: Attribute.Component<'shared-components.link-configurable'>;
+    image: Attribute.Media;
   };
 }
 
@@ -244,8 +322,14 @@ export interface SharedComponentsVideoPlayerConfigurable
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'common-objects.error-mensajes': CommonObjectsErrorMensajes;
-      'common-objects.regex': CommonObjectsRegex;
+      'common-configurations.error-mensajes': CommonConfigurationsErrorMensajes;
+      'common-configurations.regex': CommonConfigurationsRegex;
+      'common-configurations.social-media-image': CommonConfigurationsSocialMediaImage;
+      'common-elements.alert-configurable': CommonElementsAlertConfigurable;
+      'common-elements.copy-right-configurable': CommonElementsCopyRightConfigurable;
+      'common-elements.news-letter-configurable': CommonElementsNewsLetterConfigurable;
+      'common-elements.search-nav-configurable': CommonElementsSearchNavConfigurable;
+      'common-elements.social-media-configurable': CommonElementsSocialMediaConfigurable;
       'shared-components.accordion-item-configurable': SharedComponentsAccordionItemConfigurable;
       'shared-components.button-configurable': SharedComponentsButtonConfigurable;
       'shared-components.check-box-configurable': SharedComponentsCheckBoxConfigurable;

@@ -362,132 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiCommonFooterCommonFooter extends Schema.SingleType {
-  collectionName: 'common_footers';
-  info: {
-    singularName: 'common-footer';
-    pluralName: 'common-footers';
-    displayName: 'Common Footer Configuration';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    brand_logo: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    newsletter: Attribute.Component<'common-elements.news-letter-configurable'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    socialmedia: Attribute.Component<
-      'common-elements.social-media-configurable',
-      true
-    > &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    copyrigth: Attribute.Component<'common-elements.copy-right-configurable'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::common-footer.common-footer',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::common-footer.common-footer',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::common-footer.common-footer',
-      'oneToMany',
-      'api::common-footer.common-footer'
-    >;
-    locale: Attribute.String;
-  };
-}
-
-export interface ApiCommonHeaderCommonHeader extends Schema.SingleType {
-  collectionName: 'common_headers';
-  info: {
-    singularName: 'common-header';
-    pluralName: 'common-headers';
-    displayName: 'Common Header Configuration';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    brand_logo: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    alerts: Attribute.Component<'common-elements.alert-configurable', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    search_nav: Attribute.Component<'common-elements.search-nav-configurable'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::common-header.common-header',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::common-header.common-header',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::common-header.common-header',
-      'oneToMany',
-      'api::common-header.common-header'
-    >;
-    locale: Attribute.String;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -803,6 +677,132 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiCommonFooterCommonFooter extends Schema.SingleType {
+  collectionName: 'common_footers';
+  info: {
+    singularName: 'common-footer';
+    pluralName: 'common-footers';
+    displayName: 'Common Footer Configuration';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    brand_logo: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    newsletter: Attribute.Component<'common-elements.news-letter-configurable'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    socialmedia: Attribute.Component<
+      'common-elements.social-media-configurable',
+      true
+    > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    copyrigth: Attribute.Component<'common-elements.copy-right-configurable'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::common-footer.common-footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::common-footer.common-footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::common-footer.common-footer',
+      'oneToMany',
+      'api::common-footer.common-footer'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiCommonHeaderCommonHeader extends Schema.SingleType {
+  collectionName: 'common_headers';
+  info: {
+    singularName: 'common-header';
+    pluralName: 'common-headers';
+    displayName: 'Common Header Configuration';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    brand_logo: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    alerts: Attribute.Component<'common-elements.alert-configurable', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    search_nav: Attribute.Component<'common-elements.search-nav-configurable'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::common-header.common-header',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::common-header.common-header',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::common-header.common-header',
+      'oneToMany',
+      'api::common-header.common-header'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -813,14 +813,14 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::common-footer.common-footer': ApiCommonFooterCommonFooter;
-      'api::common-header.common-header': ApiCommonHeaderCommonHeader;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::common-footer.common-footer': ApiCommonFooterCommonFooter;
+      'api::common-header.common-header': ApiCommonHeaderCommonHeader;
     }
   }
 }
